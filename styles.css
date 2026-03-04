@@ -1,0 +1,98 @@
+button.revealWord{
+    width: 500;
+    height: 75;
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 5;
+    margin-bottom: 5;
+    border: none;
+    border-radius: 6px;
+    background-color:#b1b0b3;
+    font-size: 50;
+    color: white;
+}
+button{
+    width: 75;
+    height: 75;
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 5;
+    margin-bottom: 5;
+    border: none;
+    border-radius: 6px;
+    background-color:#b1b0b3;
+    font-size: 50;
+    color: white;
+}
+@keyframes letterTyped {
+    50% {
+        width: 80;
+        height: 80;
+        margin-left: 5;
+        margin-right: 5;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 55;
+
+    }
+    100% {
+        width: 75;
+        height: 75;
+        margin-left: 10;
+        margin-right: 10;
+        margin-top: 5;
+        margin-bottom: 5;
+        font-size: 50;
+    }
+}
+@keyframes idle{
+    100% {width: 75;
+    height:75;
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 5;
+    margin-bottom: 5;
+    font-size: 50;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+  }
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+  }
+input.inputWords{
+    font-size: 40px;
+    height: 50;
+    width:150;
+    color: white;
+}
+button.submitButton{
+    width: 75;
+    height: 50;
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 5;
+    margin-bottom: 5;
+    border: none;
+    border-radius: 6px;
+    font-size: 20;
+}
+.button-container {
+    display: grid;
+    justify-content: center;
+}
+.credit-text {
+    margin-top: 10px;
+    font-size: 23;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 50;
+}

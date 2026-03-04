@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel='stylesheet' href="styles.css">
+        <script src='scripts.js'></script>
+        <title>Wordle-Clone</title>
+    </head>
+
+    <body>
+        <h1>Wordle-Clone</h1>
+        <div class="grid-container">
+            <button id = '1,1'></button>
+            <button id = '1,2'></button>
+            <button id = '1,3'></button>
+            <button id = '1,4'></button>
+            <button id = '1,5'></button>
+
+            <button id = '2,1'></button>
+            <button id = '2,2'></button>
+            <button id = '2,3'></button>
+            <button id = '2,4'></button>
+            <button id = '2,5'></button>
+
+            <button id = '3,1'></button>
+            <button id = '3,2'></button>
+            <button id = '3,3'></button>
+            <button id = '3,4'></button>
+            <button id = '3,5'></button>
+
+            <button id = '4,1'></button>
+            <button id = '4,2'></button>
+            <button id = '4,3'></button>
+            <button id = '4,4'></button>
+            <button id = '4,5'></button>
+
+            <button id = '5,1'></button>
+            <button id = '5,2'></button>
+            <button id = '5,3'></button>
+            <button id = '5,4'></button>
+            <button id = '5,5'></button>
+
+            <button id = '6,1'></button>
+            <button id = '6,2'></button>
+            <button id = '6,3'></button>
+            <button id = '6,4'></button>
+            <button id = '6,5'></button>
+        </div>
+        <div class='grid-container2'>
+            <input type="text" id="word" name="word" class='inputWords'>
+
+            <button onclick="submit()" class='submitButton' id='submit'>Submit</button>
+
+            <script>
+                var input = document.getElementById("word");
+                input.addEventListener("keydown", function(event) {
+                  if (event.key === "Enter") {
+                    event.preventDefault();
+                    document.getElementById("submit").click();
+                  }
+                  else{
+                    inputLetter(event.key);
+                  }
+
+
+                });
+
+                </script>
+        </div>
+        <br>
+        <br>
+        <div class="button-container">
+            <button onclick="revealWord()" class="revealWord">Reveal Word</button>
+        </div>
+        <div class="credit-text">
+            Created by Seth Diedricks, December 2022<br>Find me on:
+            <a href="https://github.com/apo11o-08"> github</a>
+        </div>
+    </body>
+</html>
